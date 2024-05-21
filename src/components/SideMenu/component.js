@@ -25,6 +25,12 @@ const SideMenu = ({
     fetchFeatured(token);
   };
 
+  const handleLivestreamClick = () => {
+    updateHeaderTitle("Livestream");
+    updateViewType("Featured");
+    fetchFeatured(token);
+  };
+
   const renderSideMenu = () => {
     const menu = [
       {
@@ -76,7 +82,7 @@ const SideMenu = ({
       >
         Browse
       </li>
-      <li className="side-menu-item radio">Radio</li>
+      <li className="side-menu-item radio" onClick={handleLivestreamClick}>Livestream</li>
       <h3 className="user-library-header">Your Library</h3>
       {renderSideMenu()}
     </ul>
