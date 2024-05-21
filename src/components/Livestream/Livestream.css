@@ -1,0 +1,27 @@
+h1 {
+  margin-bottom: 50px !important;
+}
+
+button {
+  color: white;
+}
+
+.livestream-container {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-record {
+  font-size: 1.4rem;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+
+.livestream-container {
+  position: relative;
+}
