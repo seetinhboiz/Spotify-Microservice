@@ -40,7 +40,20 @@ const stopRecording = () => {
     const audioURL = URL.createObjectURL(blob);
     const audio = new Audio(audioURL);
     audio.controls = true;
-    document.querySelector('.livestream-container').appendChild(audio);
+
+    const audioContainer = document.querySelector('.livestream-container');
+    if (audioContainer) {
+      audioContainer.appendChild(audio);
+
+      // Tạo một liên kết để tải xuống file ghi âm
+      const downloadLink = document.createElement('a');
+      downloadLink.href = audioURL;
+      downloadLink.download = 'recorded_audio.ogg';
+      downloadLink.innerHTML = 'Download';
+      audioContainer.appendChild(downloadLink);
+    } else {
+      console.error('Không tìm thấy phần tử có className là "audio-container"');
+    }
   };
 };
 

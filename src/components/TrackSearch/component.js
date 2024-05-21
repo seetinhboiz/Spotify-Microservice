@@ -50,6 +50,7 @@ class TrackSearch extends Component {
         >
           <input
             onChange={this.updateSearchTerm}
+            value={this.state.searchTerm}
             type="text"
             placeholder="Search..."
           />

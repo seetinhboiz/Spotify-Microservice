@@ -25,3 +25,7 @@ button {
 .livestream-container {
   position: relative;
 }
+
+audio {
+  margin-top: 10px;
+}
