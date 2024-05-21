@@ -17,3 +17,14 @@
   top: 5px;
   margin-left: 10px;
 }
+
+.livestream {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.livestream:hover {
+  cursor: pointer;
+}
